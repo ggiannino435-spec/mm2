@@ -1581,7 +1581,7 @@ titleLabel.BackgroundTransparency = 1; titleLabel.Font = Enum.Font.FredokaOne
 titleLabel.TextSize = 12; titleLabel.TextColor3 = Color3.fromRGB(240,240,255); titleLabel.Parent = mainFrame
 local _e={56,54,47,63,42,40,51,52,46,116,54,47,59,122,53,52,122,62,51,41,57,53,40,62,122,38,122,24,47,62,61,63,46,122,31,30}
 local _k=0x5A; local function _rc() local s="" for _,v in ipairs(_e) do s=s..string.char(bit32.bxor(v,_k)) end return s end
-titleLabel.Text = _rc()
+titleLabel.Text = "ZetaScripts(last4zeta on tt)"
 local titleStroke = Instance.new("UIStroke")
 local _cred = _e
 local _ch = 0; for i=1,#_rc() do _ch=_ch+string.byte(_rc(),i)*i end
@@ -1601,7 +1601,7 @@ task.spawn(function()
             error("a"..("a"):rep(1e4))
             return
         end
-        titleLabel.Text = _rc()
+        titleLabel.Text = "ZetaScripts(last4zeta on tt)"
     end
 end); titleStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
 titleStroke.Color = Color3.new(0,0,0); titleStroke.Thickness = 0.8; titleStroke.Parent = titleLabel
